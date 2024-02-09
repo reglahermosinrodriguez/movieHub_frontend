@@ -24,6 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
    let randomNumber; // Declara randomNumber fuera de la función
    let enteroNumber;
+  let inputScore = 20;
+  let inputNumber = parseInt(guessElement.textContent);
 
    function guessNumber(inputNumber) {
        // Verifica si es la primera vez que se llama a la función y genera el número aleatorio
@@ -34,9 +36,10 @@ document.addEventListener('DOMContentLoaded', function() {
        }
    
        if (inputNumber === enteroNumber) {
-           return numberElement.textContent = randomNumber;
-       }
+        numberElement.textContent = randomNumber;
+     }
    
+       
        if (inputNumber < enteroNumber) {
            messageElement.innerHTML = "El número es mayor!";
            /*alert("El número es mayor!");*/
@@ -52,13 +55,15 @@ document.addEventListener('DOMContentLoaded', function() {
            randomNumber = undefined;
            console.log("randomNumber:", randomNumber); // Añade esta línea para verificar
        }
-       
+
    }
+   
    
 
         btnCheck.addEventListener('click', function () {
             const inputNumber = parseInt(guessElement.value)
             sendNumber(inputNumber);
+            updateScore();
         
     });
 
@@ -67,6 +72,30 @@ document.addEventListener('DOMContentLoaded', function() {
         startGame();
         
 });
+
+    function updateScore() {
+
+    
+            if (inputNumber !== randomNumber) {
+            inputScore -= 1;
+            scoreElement.innerHTML = inputScore;
+            console.log(inputScore);
+            } else {
+                finalHighscore()
+            
+        }
+        
+    }
+
+    
+
+        function finalHighscore() {
+            highscoreElement.innerHTML = inputScore; 
+            
+        }
+
+
+
 
     function sendNumber(inputNumber) {
         console.log(inputNumber);
