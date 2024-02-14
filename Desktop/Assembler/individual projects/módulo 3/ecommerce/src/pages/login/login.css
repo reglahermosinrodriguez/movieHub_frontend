@@ -1,0 +1,13 @@
+.go-button {
+    background-color: #FFE5EE;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    width: 8rem;
+    height: 2rem;
+    margin-top: 20rem;
+}
+
+.login-button hide {
+    display: block;
+}
