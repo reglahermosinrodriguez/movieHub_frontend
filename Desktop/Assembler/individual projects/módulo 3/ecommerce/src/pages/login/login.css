@@ -1,13 +1,52 @@
-.go-button {
-    background-color: #FFE5EE;
-    border: none;
-    border-radius: 1rem;
-    cursor: pointer;
-    width: 8rem;
-    height: 2rem;
-    margin-top: 20rem;
+h1 {
+    color: #FFE5EE;
+    text-align: center;
+    
 }
 
-.login-button hide {
+.imgLogin {  
+    width: 10rem;
+    height: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 3rem; */
     display: block;
+}
+
+.containerLogin {
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 6rem;
+}
+
+.inputUser {
+    margin-bottom: 1rem;
+
+}
+
+.inputLogin {
+    width: 10rem;
+    height: 2rem;
+
+}
+
+.inputPassword {
+    width: 10rem;
+    height: 2rem;
+
+}
+
+button {
+    border-radius: 1rem;
+    border: none;
+    background-color: #FFE5EE;
+    width: 10rem;
+    height: 2rem;
+    /* justify-items: center; */
+    margin-top: 1rem;
+    font-weight: 600;
+    
+  
 }
