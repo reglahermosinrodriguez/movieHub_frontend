@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Products } from '../../interfaces/products'
+import { Link } from 'react-router-dom';
 
 
 
@@ -28,10 +29,10 @@ useEffect(() => {
       {productData.map((product) => {
         return(
           <div key={product.id}>
-            <h1>{product.Name}</h1>
-            <img src={product.image} alt={product.Name}/>
+            <Link to={`/${product.id}`}><h1>{product.Name}</h1></Link>
             <p>{product.price}</p>
             <p>{product.description}</p>
+            <img src={product.image} alt={product.Name}/>
 
           </div>
 
