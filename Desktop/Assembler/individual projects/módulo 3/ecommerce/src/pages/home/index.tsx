@@ -3,6 +3,7 @@ import { Products } from '../../interfaces/products'
 import { Link } from 'react-router-dom';
 import './home.css'
 import Header from '../../components/header';
+import Footer from '../../components/footer';
 
 
 
@@ -45,8 +46,9 @@ useEffect(() => {
 
       })}
     </div>
-
+  
     <button className='button-load-more'>Load more</button>
+    <Footer />
     </>
 
   )
