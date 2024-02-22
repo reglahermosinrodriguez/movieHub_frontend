@@ -1,0 +1,47 @@
+html {
+    background-color: #F9C980;
+    overflow-x: hidden;
+
+}
+
+.headerHome {
+    width: 100%;
+    background-color: #FFE5EE;
+    border-radius: 1rem;
+}
+
+.card-product {
+    display: flex; /* Usa flexbox para alinear las tarjetas horizontalmente */
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en varias filas si es necesario */
+    gap: 1rem; /* Espacio entre las tarjetas */
+    justify-content: center;
+}
+
+/* Estilos para cada tarjeta individual */
+.card {
+    background-color: #ffffff; /* Color de fondo de la tarjeta */
+    border-radius: 1rem; /* Bordes redondeados */
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1); /* Sombra para resaltar la tarjeta */
+    padding: 1rem; /* Espaciado interno */
+    width: calc(50% - 1rem); /* Ancho de la tarjeta (ajustado para que haya tres tarjetas por fila con el margen de 20px) */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho y alto total de la tarjeta */
+    
+}
+
+
+img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 1rem;
+}
+
+.name-product {
+    font-size: 1.5rem;
+}
+
+
+.button-load-more {
+    justify-items: center;
+    background-color: #FFE5EE;
+    margin-left: 9rem;
+}

@@ -1,0 +1,45 @@
+[
+    {
+      "id": "1",
+      "Name": "Lavender Fields",
+      "price": "$15",
+      "image": "src/assets/img/candle1.webp",
+      "description": "A calming blend of lavender essential oil, perfect for unwinding after a long day."
+    },
+    {
+        "id": "2",
+        "Name": "Citrus Sunshine",
+        "price": "$12",
+        "image": "src/assets/img/candle2.webp",
+        "description": "Infused with zesty citrus notes of lemon, orange, and grapefruit, this candle energizes and uplifts your spirits."
+
+    },
+    {
+        "id": "3",
+        "Name": "Vanilla Bean Dream",
+        "price": "$18",
+        "image": "src/assets/img/candle3.webp",
+        "description": " Indulge in the sweet, comforting scent of vanilla bean."
+    },
+    {
+        "id": "4",
+        "Name": "Ocean Breeze",
+        "price": "$20",
+        "image": "src/assets/img/candle4.webp",
+        "description": "Transport yourself to the seaside with the refreshing scent of Ocean Breeze."
+    },
+    {
+        "id": "5",
+        "Name": "Sandalwood Serenity",
+        "price": "$25",
+        "image": "src/assets/img/candle5.webp",
+        "description": "Experience a sense of calm and balance with the earthy aroma of sandalwood."
+    },
+    {
+        "id": "6",
+        "Name": "Eucalyptus Mint",
+        "price": "$14",
+        "image": "src/assets/img/candle6.webp",
+        "description": " Refresh your senses with the invigorating blend of eucalyptus and mint."
+    }
+  ]

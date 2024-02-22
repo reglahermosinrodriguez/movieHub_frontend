@@ -66,7 +66,7 @@ const Login: React.FC<Props> = ({ onLoginSuccess }) => {
   return (
     <>
       <h1 className='titleLogin'>Candle Shop</h1>
-      <img className='imgLogin' src="src/assets/img/fondo-login.webp" alt="velas ardiendo" />
+     
       <div className='containerLogin'>
         {showLoginForm ? (
           <>

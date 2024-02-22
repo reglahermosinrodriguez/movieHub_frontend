@@ -1,12 +1,13 @@
 import React from 'react'
 import "./header.css"
 
-type Props = {}
 
-export default function Header({}: Props) {
+
+export default function Header() {
   return (
     <div> 
       <header>
-      <h1>Hola, soy una cabecera</h1></header></div>
+      <h1 className="header">Home</h1></header>
+      </div>
   )
 }

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { Products } from '../../interfaces/products'
 import { Link } from 'react-router-dom';
+import './home.css'
+import Header from '../../components/header';
 
 
 
@@ -25,22 +27,26 @@ useEffect(() => {
 
   return(
     <>
-    <div>
+    <Header />
+    <div className="card-product">
       {productData.map((product) => {
         return(
-          <div key={product.id}>
-            <Link to={`/${product.id}`}><h1>{product.Name}</h1></Link>
-            <p>{product.price}</p>
-            <p>{product.description}</p>
+          <div className='card'key={product.id}>
+            <Link to={`/${product.id}`}><h1 className='name-product'>{product.Name}</h1></Link>
+            {/* <p>{product.price}</p>
+            <p>{product.description}</p> */}
             <img src={product.image} alt={product.Name}/>
 
           </div>
+    
 
         );
 
 
       })}
     </div>
+
+    <button className='button-load-more'>Load more</button>
     </>
 
   )
