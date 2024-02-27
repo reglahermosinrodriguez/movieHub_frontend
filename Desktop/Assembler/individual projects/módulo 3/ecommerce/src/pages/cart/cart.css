@@ -1,3 +1,37 @@
-h1 {
-    background-color: red;
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.shopping-cart {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    color: white;
+}
+
+.item-quantity {
+    color: white;
+}
+
+.item-price {
+    color: white;
+}
+
+.cart-items {
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+
+.total-price {
+    color: white;
+}
+
+.cart-container {
+    background-color:  #F9C980;
+    padding-bottom: 4rem;
 }

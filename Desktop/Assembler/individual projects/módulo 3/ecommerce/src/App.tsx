@@ -1,13 +1,8 @@
-import { useState } from 'react';
-import './App.css'
-import Login from './pages/login'
+import React from 'react';
+import './App.css';
 import AppRouter from './router';
 
-
-
-
-function App() {
-  
+function App() {  
 
   return (
     <div className="App">

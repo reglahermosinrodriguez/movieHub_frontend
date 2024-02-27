@@ -1,21 +1,10 @@
 import React from 'react'
 import "./cart.css"
 import { useCart } from '../../components/useCart'
-import { Link } from 'react-router-dom';
-
-interface CartItem {
-    product: Product;
-    quantity: number;
-  }
-  
-  // Define el tipo Product si aún no está definido
-  interface Product {
-    id: string;
-    Name: string;
-    price: number;
-    image: string;
-    description: string;
-  }
+import Footer from '../../components/footer';
+import Header from '../../components/header';
+import { CartItem } from '../../interfaces/cartitems';
+import { HiMiniArchiveBoxXMark } from "react-icons/hi2";
 
 const CartPage = () => {
     const {cartItems, increaseQuantity, decreaseQuantity, setCartItems} = useCart()
@@ -34,10 +23,12 @@ const CartPage = () => {
     }
 
     return (
-        <div className='cart-container'>
-          <h2>Carrito</h2>
+        <>
+       <Header />
+       <div className='cart-container'>
+          <h2 className="shopping-cart">Shopping cart</h2>
           {cartItems.length === 0 ? (
-            <p>No hay productos en el carrito</p>
+            <p>Your cart is empty</p>
           ) : (
             <>
               <div className='cart-items'>
@@ -46,26 +37,29 @@ const CartPage = () => {
                     <img src={item.product.image} alt={item.product.Name} />
                     <div className='item-details'>
                       <h3>{item.product.Name}</h3>
-                      <p>Precio: {item.product.price}</p>
+                      <p className="item-price">Precio: {item.product.price}</p>
+                      <span className="item-quantity">Quantity: {item.quantity}</span>
                       <div className='quantity'>
+                        
                         <button onClick={() => handleDecreaseQuantity(item)}>−</button>
-                        <span>{item.quantity}</span>
                         <button onClick={() => handleIncreaseQuantity(item)}>+</button>
                       </div>
                     </div>
-                    <button onClick={() => removeItem(item)}>Remove</button>
+                    <button onClick={() => removeItem(item)}><HiMiniArchiveBoxXMark /></button>
                   </div>
                 ))}
               </div>
               <div className='total'>
-                <p>Total: ${cartItems.reduce((total, item) => total + item.product.price * item.quantity, 0)}</p>
+                <p className='total-price'>Total: ${cartItems.reduce((total, item) => total + item.product.price * item.quantity, 0)}</p>
               </div>
             </>
           )}
-          <Link to='/checkout'>
-            <button className='checkout-button'>Ir a pagar</button>
-          </Link>
+          
+            <button className='checkout-button'>Pay!</button>
+         
         </div>
+        <Footer />
+        </>
       );
     };
 

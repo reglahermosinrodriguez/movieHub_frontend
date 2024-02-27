@@ -3,7 +3,7 @@ import { FaShoppingCart } from "react-icons/fa";
 import { IoHome } from "react-icons/io5";
 import { Link } from 'react-router-dom';
 import { useCart } from '../useCart';
- // Asegúrate de importar el contexto del carrito desde el archivo correcto
+import './header.css'
 
 export default function Header() {
   const { cartItems } = useCart();

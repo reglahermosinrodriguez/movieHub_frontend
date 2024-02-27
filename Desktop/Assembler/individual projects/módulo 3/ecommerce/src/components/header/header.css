@@ -3,16 +3,22 @@
     font-size: 2rem;
     background-color: #FFE5EE;
     border-radius: 2rem;
+    height: 5rem;
 
 
 }
 
 .cart-icon {
-    margin-left: 15rem;
+    margin-left: 20rem;
+   
+}
+
+.home-icon {
+    margin-left: 1rem;
 }
 
 .cart-icon, .home-icon {
-    margin-top: 0.5rem;
-   
+    margin-top: 2rem;
     
+   
 }

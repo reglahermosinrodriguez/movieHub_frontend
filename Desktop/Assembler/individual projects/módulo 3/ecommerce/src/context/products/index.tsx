@@ -1,14 +1,15 @@
 import React, { ReactNode, createContext, useEffect, useState } from 'react'
-import { Products } from '../../interfaces/products';
+import { Product } from '../../interfaces/products';
+
 
 interface ProductsProviderProps {
     children: ReactNode;
 }
 
 
-export const productsContext = createContext<Products[]>([]);
+export const productsContext = createContext<Product[]>([]);
 export const ProductsProvider = ( { children }: ProductsProviderProps) => {
-const [product, setProduct] = useState<Products[]>([]);
+const [product, setProduct] = useState<Product[]>([]);
 
 useEffect(() =>  {
 fetchProductsData()

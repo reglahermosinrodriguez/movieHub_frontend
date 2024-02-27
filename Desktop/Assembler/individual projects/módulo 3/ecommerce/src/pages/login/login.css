@@ -2,31 +2,23 @@ html {
     background-image: url('src/assets/img/fondo-login.webp');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center; /* Centra la imagen en el fondo */
-    background-color: green; /* Color de fondo de respaldo */
-    height: 100%; /* Ajusta la altura del HTML al 100% de la ventana gráfica */
-    margin: 0; /* Elimina los márgenes predeterminados */
-}
+    background-position: center;  
+    background-color: white;
+    height: 100%; 
+    margin: 0; 
+} 
 
 body {
-    margin: 0; /* Elimina los márgenes predeterminados */
-    padding: 0; /* Elimina el relleno predeterminado */
+    margin: 0; 
+    padding: 0; 
+    
 }
 
-h1 {
+.titleLogin {
     color: #FFE5EE;
     text-align: center;
     
 }
-
- /*.imgLogin {  
-    width: 10rem;
-    height: 10rem;
-    margin-left: auto;
-    margin-right: auto;
-     margin-top: 3rem;
-    display: block;
-}*/
 
 .containerLogin {
     background-color: transparent;
@@ -34,7 +26,7 @@ h1 {
     bottom: 0;
     width: 50%;
     padding: 4rem;
-    margin-bottom: 1rem;
+    margin-bottom: 15rem;
     margin-left: 4.5rem;
 
 }
@@ -66,4 +58,12 @@ button {
     margin-top: 1rem;
     font-weight: 600;
      
+}
+
+.error-message {
+    color: red;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    margin-right: 1.5rem;
+    text-align: center;
 }

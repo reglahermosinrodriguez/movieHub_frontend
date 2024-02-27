@@ -10,9 +10,7 @@ import ProtectedRoutes from '../components/protectedroutes';
 import { CartContextProvider } from '../context/cartContext';
 
 
-
 const AppRouter: React.FC=() => { 
-
 
    return (
   <AuthProvider>
@@ -30,7 +28,6 @@ const AppRouter: React.FC=() => {
     </CartContextProvider>
     </AuthProvider>
    
-
   )
 }
 
