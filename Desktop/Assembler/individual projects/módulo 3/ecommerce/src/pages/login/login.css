@@ -1,5 +1,5 @@
 html {
-    /* background-image: url('src/assets/img/fondo-login.webp'); */
+    background-image: url('src/assets/img/fondo-login.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; /* Centra la imagen en el fondo */
