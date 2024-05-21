@@ -5,7 +5,7 @@ import Link from "next/link";
 export default async function movies() {
     const getMovies = await getData()
    
-return(
+return (
 <>
 
 <h1 className="title">MOVIES</h1>
