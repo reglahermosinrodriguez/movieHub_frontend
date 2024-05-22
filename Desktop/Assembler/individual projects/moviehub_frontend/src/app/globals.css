@@ -55,7 +55,41 @@ img {
   width: 20rem;
 }
 
+.card-movie {
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 0.5rem; 
+  justify-content: center;
+  margin-top: -1rem;
+}
+
 .card {
-  background-color: red;
-  padding: 5rem;
+  background-color: rgba(255, 255, 255, 0.6); 
+    border-radius: 1rem; 
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1); 
+    padding: 1rem;
+    width: calc(50% - 1rem); 
+    box-sizing: border-box; 
+}
+
+.movie-name {
+  text-align: center;
+}
+
+.movie-img {
+ 
+  height: 20rem;
+  margin-left: 14rem;
+}
+
+p {
+  font-weight: bold;
+  text-decoration: dashed;
+}
+
+.button-id {
+  display: flex;
+  margin-top: auto;
+  margin-left: 23rem;
+  margin-bottom: 2rem;
 }

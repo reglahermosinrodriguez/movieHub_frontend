@@ -1,4 +1,4 @@
-import { getMovie } from '@/utils/api'
+import { getMovie } from '@/utils/function'
 import { Movies } from '@/utils/interface/interfaces'
 import React from 'react'
 
