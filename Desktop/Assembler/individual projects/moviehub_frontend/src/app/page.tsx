@@ -18,7 +18,10 @@ export default async function Page()
     <h1 className="title">YOUR MOVIES APP</h1>   
    
     <div className="title-button"><Link href="/api/auth/login"><button>Log in</button></Link>
+    <Link href="/movies"><button>Movies</button></Link>
     </div>
+
+
 
     </>
 

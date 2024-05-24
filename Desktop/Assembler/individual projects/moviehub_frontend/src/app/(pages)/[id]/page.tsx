@@ -22,10 +22,10 @@ try {
   return (
     
     <div>
-      <h1>{movie.name}</h1>
-      <img src={movie.image} alt="Hola" />
-      <p>Sinopsis: {movie.sinopsis}</p>
-      <p>Score: {movie.score}</p>
+      <h1 className="title">{movie.name}</h1>
+      <img className="movie-id" src={movie.image} alt={`cartel de ${movie.name}`} />
+      <p>Sinopsis:</p> {movie.sinopsis}
+      <p>Score:</p> {movie.score}
     </div>
     
   )
